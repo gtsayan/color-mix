@@ -1,39 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">-->
-   <title>Заголовок</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Заголовок</title>
 </head>
+
 <body>
-   <div class="container">
-<div class="inputs">
-    <div class="halftones-info"></div>
-    <div class="order">
-<div class="color">
-    <div class="name"></div>
-    <div class="color-name"></div>
-</div>
-<div class="items">
-    <div class="names"></div>
-    <div class="item">
-        <div class="checkbox"></div>
-        <div class="halftone"></div>
-        <div class="volume"></div>
-        <div class="measure"></div>
-        <div class="delete"></div>
-    </div>
-</div>
+    <div class="container">
+        <div class="left-side">
+            <div class="left-side__header">Выбраны 4 оттенка</div>
+
+            <!-- ______________________ORDER-COLOR________________________________________                 -->
+
+            <!-- <div class="order">
+        <div class="order-color">
+            <div class="order-color__name">Цвет</div>
+            <div class="order-color__value">Синий</div>
+        </div> -->
+
+            <!-- ______________________ORDER CONTENT________________________________________                 -->
+
+            <table class="order-table">
+                <tr class="table-header">
+                    <th>Цвет</th>
+                    <th class="checkbox">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__control" checked>
+                            <div class="custom-checkbox__element"></div>
+                        </label>
+                    </th>
+                    <th>Оттенок</th>
+                    <th>Объем</th>
+                    <th></th>
+                    <th>Упаковка</th>
+                    <th class="cross-delete">
+                        <a href="#"> <img src="./img/delete.svg" alt=""> </a>
+                    </th class="cross-delete">
+                </tr>
+                <tr>
+                    <td class="color-column">Синий</td>
+                    <td>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__control" checked>
+                            <div class="custom-checkbox__element"></div>
+                        </label>
+                    </td>
+                    <td><select class="order-item__select" size="1" name="halftone[]">
+                            <option selected value="Небесный">Небесный</option>
+                            <option value="Голубой">Голубой</option>
+                            <option value="Глубокий">Глубокий</option>
+                            <option value="Королевский">Королевский</option>
+                        </select></td>
+                    <td><input class="order-item__input" type="text" value="1"></td>
+                    <td>л</td>
+                    <td>банка</td>
+                    <td class="cross-delete">
+                        <a href="#"> <img src="./img/delete.svg" alt=""> </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__control" checked>
+                            <div class="custom-checkbox__element"></div>
+                        </label>
+                    </td>
+                    <td><select class="order-item__select" size="1" name="halftone[]">
+                            <option value="Небесный">Небесный</option>
+                            <option selected value="Голубой">Голубой</option selected>
+                            <option value="Глубокий">Глубокий</option>
+                            <option value="Королевский">Королевский</option>
+                        </select></td>
+                    <td><input class="order-item__input" type="text" value="2"></td>
+                    <td>л </td>
+                    <td>банка</td>
+                    <td class="cross-delete">
+                        <a href="#"> <img src="./img/delete.svg" alt=""> </a>
+                    </td class="cross-delete">
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__control" checked>
+                            <div class="custom-checkbox__element"></div>
+                        </label>
+                    </td>
+                    <td><select class="order-item__select" size="1" name="halftone[]">
+                            <option value="Небесный">Небесный</option>
+                            <option value="Голубой">Голубой</option>
+                            <option selected value="Глубокий">Глубокий</option selected>
+                            <option value="Королевский">Королевский</option selected>
+                        </select></td>
+                    <td><input class="order-item__input" type="text" value="1"></td>
+                    <td>л</td>
+                    <td>банка</td>
+                    <td class="cross-delete">
+                        <a href="#"> <img src="./img/delete.svg" alt=""> </a>
+                    </td class="cross-delete">
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="custom-checkbox__control" checked>
+                            <div class="custom-checkbox__element"></div>
+                        </label>
+                    </td>
+                    <td><select class="order-item__select" size="1" name="halftone[]">
+                            <option value="Небесный">Небесный</option>
+                            <option value="Голубой">Голубой</option>
+                            <option value="Глубокий">Глубокий</option>
+                            <option selected value="Королевский">Королевский</option selected>
+                        </select></td>
+                    <td><input class="order-item__input" type="text" value="3"></td>
+                    <td>л</td>
+                    <td>банка</td>
+                    <td class="cross-delete">
+                        <a href="#"> <img src="./img/delete.svg" alt=""> </a>
+                    </td class="cross-delete">
+                </tr>
+
+            </table>
+
+
+            <div class="additem"></div>
+        </div>
+
+        <!-- ______________________MENU_SIDE________________________________________                 -->
+
+        <div class="menu-side">
+            <ul class="menu">
+                <li class="menu-item menu-item-active">Состав заказа</li>
+                <li class="menu-item">Комментарий</li>
+                <li class="menu-item">Контактное лицо</li>
+            </ul>
+            <input class="submit" type="submit" value="Отправить">
+        </div>
 
     </div>
-    <div class="additem"></div>
-</div>
-<div class="menu"></div>
 
-   </div>
-   
+
+
+
 </body>
+
 </html>
